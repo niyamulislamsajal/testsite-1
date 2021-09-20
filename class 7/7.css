@@ -1,0 +1,131 @@
+/*custom css google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*monserat-bebasnue-alfaslab*/
+*{margin: 0;padding: 0;}
+
+h1{font-family: 'Alfa Slab One', cursive;}
+span,input{font-family: 'Bebas Neue', cursive;}
+h5,h2,h3,h4,h5,button{font-family: 'Montserrat', sans-serif;}
+a,a:hover {text-decoration: none;  }
+
+/*_______all the text style are imported here______*/
+
+.nav-item1  {margin-left: 500px;color: black; }
+.banner{widows: 100%;
+background: url(https://images.unsplash.com/photo-1596649299486-4cdea56fd59d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 80vh;
+}
+.nav-item1 :hover { background-color: whitesmoke;}
+
+.nav-link2 {background-color: whitesmoke;}
+/*************
+banner start
+*********/
+.banner1 {color: black;width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 30vh;
+    padding: 65px;
+}
+.banner1 {}
+.pretitle{}
+.title {}
+.subtytle{}
+/*burger blog*/
+.img-fluid {
+    max-width: 36%;    border-radius: 9%;
+}
+/*burger detail*/
+   
+ .burger-blog{width: 100%; padding: 39px 0; }
+ 
+ .blog-info{ position: relative; }
+ .blog-title{ position: absolute ;    top: 44px;
+    left: 30px; color: white;}
+
+ .img-fluid1{     height: 250px;
+    width: 650px; border-radius: 9%;
+} 
+.upper-post{position: relative;  }
+.lower-post {position: relative; padding: 10px;}
+/*BUTTON*/
+.blog-button { text-align: center;margin: 10px; padding: 10px;}
+.button-primary  { background-color: #F6BE00; color: #352C04 ; border-radius: 10px; border:1px solid #F6BE00 ;}
+
+
+/*////////////////////////hover design//////////////////////////////////////////////////*/
+.button-primary {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button-primary:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button-primary:active {
+    color: #000
+}
+
+.button-primary:active:after {
+    background: transparent;
+}
+
+.button-primary:hover:before {
+    opacity: 1;
+}
+
+.button-primary:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+
+/*order now design*/
+
+.order-now { text-align: center;   }
+.order-now h1 { color: #582819 ;  }
+/*event design*/
+.event{  padding: 48px; width: 100%; box-shadow: 4px 4px 12px ;
+} 
+.event h1{ color: #582819 ; }
+.event-info { padding: 50px; }
